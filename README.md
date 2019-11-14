@@ -1,6 +1,6 @@
 ## ConsumeLess
 
-Is an app for you manage items that you can borrow or lead around your neighbourhood. We decide to build this as a way to reduce consume of new item, doing it you can reuse stuffs from someone and save the planet.
+Is an app for you manage items that you can borrow or lend around your neighbourhood. We decide to build this as a way to reduce consume of new item, doing it you can reuse stuffs from someone and save the planet.
 
 In this project we are exposing the back-end via our api([ConsumeLess-Backend](https://github.com/irafaelasilva/ConsumeLess-backend)). Further to this, we create a new front-end that could interact with our back-end. As a team, we took this as an opportunity to learn and build our front-end with React, calling our restful API in order to access our data.
 
