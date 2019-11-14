@@ -34,7 +34,7 @@ export default class Navigation extends Component {
 
     return (
       <div>
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="Navigation">
+        <Navbar collapseOnSelect expand="lg" variant="light" className="Navigation">
         <div className="navbar-collapse collapse w-100 order-3 order-md-0 dual-collapse2">          
           <Navbar.Brand href="/"><img src={require('../logo-with-name-small.svg')} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -61,14 +61,19 @@ export default class Profile extends Component {
   confirmRequest = (index, event) => {
     let id = this.state.bookingRequests[index].id
     this.Auth.confirmRequest(id)
-      .then(res => this.props.history.replace('/profile'))
+      .then(res => this.props.history.replace('/profile'),
+      this.setState({bookingRequests: [...this.state.bookingRequests.filter(request =>
+      request.id !== id)]}))
       .catch(error => alert(error))
+    this.forceUpdate()
   }
 
   rejectRequest = (index, event) => {
     let id = this.state.bookingRequests[index].id
     this.Auth.rejectRequest(id)
-      .then(res => this.props.history.replace('/profile'))
+      .then(res => this.props.history.replace('/profile'),
+      this.setState({bookingRequests: [...this.state.bookingRequests.filter(request =>
+      request.id !== id)]}))
       .catch(error => alert(error))
   }
 
@@ -86,7 +91,7 @@ export default class Profile extends Component {
                   </Card.Body>
                   <ListGroup className="list-group-flush">
                     <ListGroupItem className="iconEmail"><MdEmail />  {user.email}</ListGroupItem>
-                    <ListGroupItem className="iconLocation"><MdLocationOn / >  London</ListGroupItem>
+                    <ListGroupItem className="iconLocation"><MdLocationOn / >  {user.postcode}</ListGroupItem>
                   </ListGroup>
                 </Card>
               </Col>
@@ -149,7 +154,7 @@ export default class Profile extends Component {
                 Booking Requests
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="1">
-                <Card.Body><RequestTable tableData={this.state.bookingRequests} confirmRequest={this.confirmRequest}/></Card.Body>
+                <Card.Body><RequestTable tableData={this.state.bookingRequests} confirmRequest={this.confirmRequest} rejectRequest={this.rejectRequest} /></Card.Body>
               </Accordion.Collapse>
             </Card>
             </Card>

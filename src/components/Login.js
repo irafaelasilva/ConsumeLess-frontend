@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import './App.css';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -103,6 +104,9 @@ export default function Login() {
       .catch(error => handleClickOpen())
   };
 
+  if (authService.loggedIn()){
+    return <Redirect to="/categories"/>
+  }
   return (
     <div className="App">
       <Container component="main" maxWidth="xs">

@@ -13,5 +13,5 @@ configure({ adapter: new Adapter() });
       const wrapper = shallow(<Items />);
       expect(wrapper.find('div')).to.have.lengthOf(2)
     });
-  
+
   });

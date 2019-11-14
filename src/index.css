@@ -13,11 +13,11 @@ body {
   }
 
   .Navigation {
-    background-color: rgb(125, 129, 121) !important
+    background-color: rgb(234, 238, 229) !important
   }
 
   .profileItems {
-    background-color: #a8d481 !important;
+    background-color: rgb(234, 238, 229) !important;
     text-align: center;
     color:rgb(92, 43, 226);
   }

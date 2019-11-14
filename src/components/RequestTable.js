@@ -6,13 +6,13 @@ import AuthService from './AuthService';
 export default class RequestTable extends Component {
 
   render() {
-    const { tableData, confirmRequest } = this.props;
+    const { tableData, confirmRequest, rejectRequest } = this.props;
 
     return (
       <div className="container">
         <Table striped bordered hover>
           <TableHeader />
-          <TableBody tableData={tableData} confirmRequest={confirmRequest}/>
+          <TableBody tableData={tableData} confirmRequest={confirmRequest} rejectRequest={rejectRequest}/>
         </Table>
       </div>
     )

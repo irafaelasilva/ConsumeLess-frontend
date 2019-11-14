@@ -9,6 +9,8 @@ import Profile from './components/Profile';
 import Items from './components/Items';
 import Item from './components/Item';
 import NewItem from './components/NewItem';
+import ComingSoon from './constants/ComingSoon';
+import NotFound from './constants/NotFound'
 
 import Map from './components/Map';
 
@@ -26,10 +28,10 @@ const routing = (
         <Route exact path='/items/new' component = {NewItem} />
         <Route exact path='/items' component = {Items} />
         <Route exact path='/item/:id' component = {Item} />
-        {/* <Route exact path='/items/new' component = {NewItem} /> */}
         <Route exact path='/map' component = {Map} />
         <Route exact path='/categories' component = {BrowseByCategory} />
-
+        <Route path='/item/update' component = {ComingSoon} />
+        <Route component={NotFound} />
       </Switch>
   </Router>
 )
