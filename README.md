@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Interface project
 
 Look below a previous of our interface project:
-Register and Login Page
+Register, Login and Home Page.
 
 <p align="center">
   <img src="https://github.com/irafaelasilva/ConsumeLess-frontend/blob/master/public/register.png" width="300" title="Register Page">
