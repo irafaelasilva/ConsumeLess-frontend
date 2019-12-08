@@ -6,7 +6,7 @@ In this project we are exposing the back-end via our api([ConsumeLess-Backend](h
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Interface project
+### Project Interface
 
 Look below a previous of our interface project:
 Register, Login and Home Page.
